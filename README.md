@@ -19,7 +19,7 @@ Users can easily submit leave requests through a straightforward form, attaching
 - Admins receive leave applications and can review them.
 - Admins have the ability to approve or reject leave applications based on leave availability.
   
-#### Leave History
+### Leave History
 - Admins can access the leave history of users, including past leave applications and their status.
 
 ## Installation
