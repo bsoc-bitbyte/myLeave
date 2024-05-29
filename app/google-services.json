@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77540037514",
+    "project_id": "myleave-4c620",
+    "storage_bucket": "myleave-4c620.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77540037514:android:d6510014a6c347f9a16e73",
+        "android_client_info": {
+          "package_name": "com.example.myleave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfJlnVHiO_04JCq1mdQvEGn0lIrtSTcgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
