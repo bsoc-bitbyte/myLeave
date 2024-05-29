@@ -13,13 +13,13 @@ Users can easily submit leave requests through a straightforward form, attaching
 - **Admin:** Reviews and approves/rejects leave applications. Accesses the leave history of users.
 
 ### Leave Application Submission
--Users can fill out a leave application form with details such as leave type, start/end dates, and the necessary documents in the form of PDF directly within the app.
+- Users can fill out a leave application form with details such as leave type, start/end dates, and the necessary documents in the form of PDF directly within the app.
 
 ### Leave Application Review
 - Admins receive leave applications and can review them.
 - Admins have the ability to approve or reject leave applications based on leave availability.
   
-### Leave History
+#### Leave History
 - Admins can access the leave history of users, including past leave applications and their status.
 
 ## Installation
