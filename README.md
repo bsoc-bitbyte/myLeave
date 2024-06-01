@@ -28,10 +28,17 @@ Users can easily submit leave requests through a straightforward form, attaching
 2. Clone the repository:
 
 ```bash
-git clone https://github.com/bsoc-bitbyte/busify-android.git
+git clone https://github.com/bsoc-bitbyte/myLeave.git
 ```
 3. Open the project in Android Studio.
 
 4. Build and run the app on your connected device using Android Studio.
 
 Note: Make sure you have the necessary dependencies and Android SDK installed to build and run Android apps.
+
+The [CONTRIBUTING.md](https://github.com/bsoc-bitbyte/myLeave/blob/master/CONTRIBUTING.md) contains the step-by-step procedure for contributing to this project.
+
+## Design 
+
+[Figma Design](https://www.figma.com/design/jYm7XGidk1L3HNf9e4Otwn/myLeave?node-id=0-1&t=U1X9Mz8wFMp7x0tv-1)
+
