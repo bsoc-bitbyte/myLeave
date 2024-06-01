@@ -42,3 +42,5 @@ The [CONTRIBUTING.md](https://github.com/bsoc-bitbyte/myLeave/blob/master/CONTRI
 
 [Figma Design](https://www.figma.com/design/jYm7XGidk1L3HNf9e4Otwn/myLeave?node-id=0-1&t=U1X9Mz8wFMp7x0tv-1)
 
+Note- Refer this figma design for refrence
+
