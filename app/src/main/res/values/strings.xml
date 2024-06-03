@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">myLeave</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="hint_email">test@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="condition_password">8+ Characters</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
 </resources>
