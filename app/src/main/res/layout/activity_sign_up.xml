@@ -7,4 +7,193 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.SignUpActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/top_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:id="@+id/ivSignUpImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="SignUp Image"
+                android:scaleType="fitXY"
+                android:src="@drawable/sign_up_image" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bottom_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_cardView"
+            android:layout_marginTop="-30dp"
+            app:cardCornerRadius="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F3F4F6">
+
+                <TextView
+                    android:id="@+id/reference"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:alpha="0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tvSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/epilogue_bold"
+                    android:text="@string/sign_up"
+                    android:textColor="#379AE6"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="@+id/reference"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/tvCreateAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/epilogue_semibold"
+                    android:text="@string/create_an_account"
+                    android:textColor="#9B9B9B"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvSignUp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSignUp" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:text="@string/name"
+                    android:textColor="#323842"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvCreateAccount"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCreateAccount" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:padding="5dp"
+                    android:background="@drawable/custom_edittext"
+                    android:elevation="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/email"
+                    android:textColor="#323842"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvName"
+                    app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/custom_edittext"
+                    android:elevation="5dp"
+                   android:padding="5dp"
+                    android:hint="@string/hint_email"
+                    android:layout_marginHorizontal="50dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/password"
+                    android:textColor="#323842"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/tvEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/custom_edittext"
+                    android:elevation="5dp"
+                    android:hint="@string/condition_password"
+                    android:padding="5dp"
+                    android:inputType="textPassword"
+                    android:layout_marginHorizontal="50dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="193dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:backgroundTint="#4DABF5"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+                <TextView
+                    android:id="@+id/tvAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/already_have_an_account"
+                    android:textColor="#9095A0"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/login"
+                    android:textColor="#4DABF5"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvAccount"
+                    app:layout_constraintTop_toTopOf="@+id/tvAccount" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
