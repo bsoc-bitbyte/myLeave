@@ -43,9 +43,9 @@
 
                 <TextView
                     android:id="@+id/reference"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="5dp"
-                    android:minWidth="269dp"
+                    android:layout_marginHorizontal="50dp"
                     android:alpha="0"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -60,10 +60,9 @@
                     android:text="@string/sign_up"
                     android:textColor="#379AE6"
                     android:textSize="24sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/reference"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.035" />
+                    android:layout_marginTop="20dp"/>
 
                 <TextView
                     android:id="@+id/tvCreateAccount"
@@ -90,13 +89,13 @@
 
                 <EditText
                     android:id="@+id/etName"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
+                    android:layout_marginHorizontal="50dp"
+                    android:padding="5dp"
                     android:background="@drawable/custom_edittext"
                     android:elevation="5dp"
-                    android:minWidth="269dp"
-                    android:minHeight="35dp"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -115,14 +114,14 @@
 
                 <EditText
                     android:id="@+id/etEmail"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:background="@drawable/custom_edittext"
                     android:elevation="5dp"
+                   android:padding="5dp"
                     android:hint="@string/hint_email"
-                    android:minWidth="269dp"
-                    android:minHeight="35dp"
+                    android:layout_marginHorizontal="50dp"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -141,15 +140,15 @@
 
                 <EditText
                     android:id="@+id/etPassword"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:background="@drawable/custom_edittext"
                     android:elevation="5dp"
                     android:hint="@string/condition_password"
+                    android:padding="5dp"
                     android:inputType="textPassword"
-                    android:minWidth="269dp"
-                    android:minHeight="35dp"
+                    android:layout_marginHorizontal="50dp"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
