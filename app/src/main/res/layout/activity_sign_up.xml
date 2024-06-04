@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:contentDescription="Sign Up Image"
+                android:contentDescription="SignUp Image"
                 android:scaleType="fitXY"
                 android:src="@drawable/sign_up_image" />
         </androidx.cardview.widget.CardView>
