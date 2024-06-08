@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pending_applications">Pending Applications</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="past_applications">Past Applications</string>
+    <string name="add" />
+</resources>
