@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#171A1F12"
+    android:background="@color/app_background"
     tools:context=".ui.user.UserDashboardActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -25,54 +25,48 @@
             tools:context=".ui.user.UserDashboardActivity">
 
             <TextView
-                android:id="@+id/dashboard_title"
+                android:id="@+id/tvDashboardAdmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
                 android:fontFamily="@font/epilogue_bold"
                 android:text="@string/dashboard"
-                android:textColor="#171A1F"
+                android:textColor="@color/Title_color"
+                android:layout_marginStart="140dp"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.45"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.02">
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <ImageButton
-                android:id="@+id/Btn_profile"
+                android:id="@+id/ibProfileAdmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="null"
+                android:layout_marginEnd="28dp"
                 android:src="@drawable/ic_profile"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.90"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/dashboard_title"
-                app:layout_constraintVertical_bias="0.05">
+                app:layout_constraintTop_toTopOf="@id/tvDashboardAdmin">
 
             </ImageButton>
 
             <TextView
-                android:id="@+id/pending_applications"
+                android:id="@+id/tvPendingApplicationsAdmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:text="@string/pending_applications"
-                android:textColor="#171A1F"
+                android:textColor="@color/subhead_color"
+                android:layout_marginTop="85dp"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.15">
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/Recycler_pending_applications"
+                android:id="@+id/rvPendingApplicationsAdmin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -80,40 +74,37 @@
                 android:layout_marginEnd="20dp"
 
                 android:nestedScrollingEnabled="false"
-                app:layout_constraintStart_toStartOf="@id/pending_applications"
-                app:layout_constraintTop_toBottomOf="@id/pending_applications">
+                app:layout_constraintStart_toStartOf="@id/tvPendingApplicationsAdmin"
+                app:layout_constraintTop_toBottomOf="@id/tvPendingApplicationsAdmin">
 
             </androidx.recyclerview.widget.RecyclerView>
 
             <TextView
-                android:id="@+id/past_applications"
+                android:id="@+id/tvPastApplicationsAdmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
                 android:text="@string/past_applications"
-                android:textColor="#171A1F"
+                android:textColor="@color/subhead_color"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.1"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/Recycler_pending_applications"
-                app:layout_constraintVertical_bias="0.15">
+                app:layout_constraintTop_toBottomOf="@id/rvPendingApplicationsAdmin">
 
             </TextView>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/Recycler_past_applications"
+                android:id="@+id/rvPastApplicationsAdmin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:nestedScrollingEnabled="false"
-                app:layout_constraintStart_toStartOf="@id/past_applications"
-                app:layout_constraintTop_toBottomOf="@id/past_applications">
+                app:layout_constraintStart_toStartOf="@id/tvPastApplicationsAdmin"
+                app:layout_constraintTop_toBottomOf="@id/tvPastApplicationsAdmin">
 
             </androidx.recyclerview.widget.RecyclerView>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,4 +13,5 @@
     <string name="dashboard">Dashboard</string>
     <string name="past_applications">Past Applications</string>
     <string name="add" />
+    <string name="add_item_fab">add_item_fab</string>
 </resources>
