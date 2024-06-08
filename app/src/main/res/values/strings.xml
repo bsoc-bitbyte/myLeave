@@ -9,4 +9,8 @@
     <string name="condition_password">8+ Characters</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="login">Login</string>
+    <string name="pending_applications">Pending Applications</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="past_applications">Past Applications</string>
+    <string name="add" />
 </resources>

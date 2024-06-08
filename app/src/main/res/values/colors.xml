@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="app_background">#171A1F12</color>
+    <color name="Title_color">#171A1F</color>
+    <color name="subhead_color">#171A1F</color>
+    <color name="btn_add_color">#379AE6</color>
 </resources>
