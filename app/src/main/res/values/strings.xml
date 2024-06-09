@@ -14,4 +14,7 @@
     <string name="past_applications">Past Applications</string>
     <string name="add" />
     <string name="add_item_fab">add_item_fab</string>
+    <string name="leave_type">Sick Leave</string>
+    <string name="application_status">Pending</string>
+    <string name="leave_duration">10/01/22 - 12/01/22</string>
 </resources>
