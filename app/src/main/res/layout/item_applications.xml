@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:padding="4dp"
                 android:textColor="@color/grey"
-                android:fontFamily="@font/Inter"
+                android:fontFamily="@font/interr"
                 android:text="@string/leave_type"
                 android:textSize="16sp" />
 
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
-                android:fontFamily="@font/Inter"
+                android:fontFamily="@font/interr"
                 android:textColor="@color/black_custom"
                 android:text="@string/leave_duration"
                 android:textSize="16sp"/>
@@ -52,7 +52,7 @@
                 android:id="@+id/tv_applicationStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/Inter"
+                android:fontFamily="@font/interr"
                 android:text="@string/application_status"
                 android:textColor="@color/grey"
                 android:textSize="18sp" />

@@ -7,4 +7,297 @@
     android:layout_height="match_parent"
     tools:context=".ui.user.LeaveFormActivity">
 
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/app_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/epilogue_bold"
+                android:textSize="23sp"
+                android:textFontWeight="600"
+                android:text="@string/apply_for_leave"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewTitle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <!-- Name Field -->
+                    <TextView
+                        android:id="@+id/labelName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/namelf"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editTextName"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:fontFamily="@font/interr"
+                        android:layout_marginTop="4dp"
+                        android:hint="Agrim Gupta"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelName" />
+
+                    <!-- Roll No Field -->
+                    <TextView
+                        android:id="@+id/labelRollNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/roll_no"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/editTextName" />
+
+                    <EditText
+                        android:id="@+id/editTextRollNo"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/interr"
+                        android:textSize="16sp"
+                        android:hint="22BCS016"
+                        android:inputType="text"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelRollNo" />
+
+                    <!-- Department Field -->
+                    <TextView
+                        android:id="@+id/labelDepartment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/department"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/editTextRollNo" />
+
+                    <Spinner
+                        android:id="@+id/spinnerDepartment"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/interr"
+                        android:background="@drawable/spinner_background"
+                        android:entries="@array/department_array"
+                        android:popupBackground="@drawable/spinner_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelDepartment" />
+
+                    <!-- Leave Type Spinner -->
+                    <TextView
+                        android:id="@+id/labelLeaveType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/leave_type_spin"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/spinnerDepartment" />
+
+                    <Spinner
+                        android:id="@+id/spinnerLeaveType"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/interr"
+                        android:entries="@array/leave_types"
+                        android:background="@drawable/spinner_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelLeaveType" />
+
+                    <TextView
+                        android:id="@+id/labelLeaveDates"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/leave"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/spinnerLeaveType" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelLeaveDates">
+
+                        <EditText
+                            android:id="@+id/editTextStartDate"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/interr"
+                            android:textSize="16sp"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:inputType="date"
+                            android:background="@drawable/edit_text_background" />
+
+                        <EditText
+                            android:id="@+id/editTextEndDate"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/interr"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:textSize="16sp"
+                            android:inputType="date"
+                            android:background="@drawable/edit_text_background" />
+                    </LinearLayout>
+
+                    <!-- Purpose Field -->
+                    <TextView
+                        android:id="@+id/labelPurpose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/purpose_for_leave"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelLeaveDates" />
+
+                    <EditText
+                        android:id="@+id/editTextPurpose"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/interr"
+                        android:hint="@string/reason"
+                        android:inputType="textMultiLine"
+                        android:textSize="16sp"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelPurpose" />
+
+                    <!-- Attachment Field -->
+                    <TextView
+                        android:id="@+id/labelAttachment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/attachment"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/editTextPurpose" />
+
+                    <!-- Your existing layout code -->
+                    <LinearLayout
+                        android:id="@+id/attachmentLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelAttachment">
+
+                        <EditText
+                            android:id="@+id/editTextAttachment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="6px"
+                            android:fontFamily="@font/interr"
+                            android:hint="@string/no_file_chosen"
+                            android:background="@color/white"
+                            android:textSize="16sp"
+                            android:focusable="false"
+                            android:clickable="false" />
+
+                        <ImageButton
+                            android:id="@+id/buttonChooseFile"
+                            android:layout_width="48dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_folder"
+                            android:contentDescription="@string/choose_file"
+                            android:background="@color/white"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/editTextAttachment"
+                            app:layout_constraintBottom_toBottomOf="@id/editTextAttachment"
+                            app:layout_constraintStart_toEndOf="@id/editTextAttachment" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonApply"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="75dp"
+                        android:fontFamily="@font/interr"
+                        android:backgroundTint="@color/apply_btn"
+                        android:background="@drawable/apply_button"
+                        android:textAllCaps="false"
+                        android:textFontWeight="600"
+                        android:textColor="@color/white"
+                        android:text="@string/apply"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/labelAttachment" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

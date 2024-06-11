@@ -17,4 +17,32 @@
     <string name="leave_type">Sick Leave</string>
     <string name="application_status">Pending</string>
     <string name="leave_duration">10/01/22 - 12/01/22</string>
+    <string name="apply_for_leave">Apply for Leave</string>
+    <string name="namelf">Name*</string>
+    <string name="roll_no">Roll No.*</string>
+    <string name="cse">CSE</string>
+    <string name="department">Department*</string>
+    <string name="leave">Leave*</string>
+    <string name="leave_type_spin">Leave Type*</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="purpose_for_leave">Purpose for Leave*</string>
+    <string name="reason">Reason</string>
+    <string name="attachment">Attachment</string>
+    <string name="no_file_chosen">No file chosen</string>
+    <string name="apply">Apply</string>
+    <string name="choose_file">Choose File</string>
+    <string-array name="leave_types">
+        <item>Select--</item>
+        <item>Sick Leave</item>
+        <item>Casual Leave</item>
+        <item>Emergency Leave</item>
+        <!-- Add other leave types as needed -->
+    </string-array>
+    <string-array name="department_array">
+        <item>CSE</item>
+        <item>MECH</item>
+        <item>SM</item>
+        <item>ECE</item>
+        <item>Design</item>
+    </string-array>
 </resources>
