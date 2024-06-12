@@ -31,6 +31,8 @@
     <string name="no_file_chosen">No file chosen</string>
     <string name="apply">Apply</string>
     <string name="choose_file">Choose File</string>
+    <string name="agrim_gupta">Agrim Gupta</string>
+    <string name="_22bcs016">22BCS016</string>
     <string-array name="leave_types">
         <item>Select--</item>
         <item>Sick Leave</item>
