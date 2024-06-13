@@ -2,16 +2,17 @@ package com.example.myleave.ui.user
 
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myleave.R
+import com.example.myleave.databinding.ActivityLeaveFormBinding
 
 class LeaveFormActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLeaveFormBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_leave_form)
+        binding= ActivityLeaveFormBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val spinnerLeaveType: Spinner = findViewById(R.id.spinnerLeaveType)
         val leaveTypeAdapter = ArrayAdapter.createFromResource(
             this,
             R.array.leave_types,
@@ -19,9 +20,8 @@ class LeaveFormActivity : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         }
-        spinnerLeaveType.adapter = leaveTypeAdapter
+        binding.spLeaveType.adapter = leaveTypeAdapter
 
-        val spinnerDepartment: Spinner = findViewById(R.id.spinnerDepartment)
         val departmentAdapter = ArrayAdapter.createFromResource(
             this,
             R.array.department_array,
@@ -29,6 +29,6 @@ class LeaveFormActivity : AppCompatActivity() {
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         }
-        spinnerDepartment.adapter = departmentAdapter
+        binding.spDepartment.adapter = departmentAdapter
     }
 }
