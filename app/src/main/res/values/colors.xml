@@ -6,4 +6,10 @@
     <color name="btn_add_color">#379AE6</color>
     <color name="black_custom">#171A1F</color>
     <color name="grey">#9095A0</color>
+    <color name="off_white">#F3F4F6</color>
+    <color name="blue">#379AE6</color>
+    <color name="light_grey">#9B9B9B</color>
+    <color name="light_black">#323842</color>
+    <color name="btn_color">#4DABF5</color>
+
 </resources>
