@@ -2,9 +2,315 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/cl_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.user.LeaveFormActivity">
 
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/app_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/epilogue_bold"
+                android:textSize="23sp"
+                android:textFontWeight="600"
+                android:text="@string/apply_for_leave"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_form"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_card_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <!-- Name Field -->
+                    <TextView
+                        android:id="@+id/tv_label_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/namelf"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/interr"
+                        android:hint="@string/agrim_gupta"
+                        android:inputType="textPersonName"
+                        android:textSize="16sp"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_name" />
+
+                    <!-- Roll No Field -->
+                    <TextView
+                        android:id="@+id/tv_label_roll_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/roll_no"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+                    <EditText
+                        android:id="@+id/et_roll_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/interr"
+                        android:textSize="16sp"
+                        android:hint="@string/_22bcs016"
+                        android:inputType="text"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_roll_no" />
+
+                    <!-- Department Field -->
+                    <TextView
+                        android:id="@+id/tv_label_department"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/department"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/et_roll_no" />
+
+                    <Spinner
+                        android:id="@+id/sp_department"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/interr"
+                        android:background="@drawable/spinner_background"
+                        android:entries="@array/department_array"
+                        android:popupBackground="@drawable/spinner_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_department" />
+
+                    <!-- Leave Type Spinner -->
+                    <TextView
+                        android:id="@+id/tv_label_leave_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/leave_type_spin"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/sp_department" />
+
+                    <Spinner
+                        android:id="@+id/sp_leave_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/interr"
+                        android:entries="@array/leave_types"
+                        android:background="@drawable/spinner_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_leave_type" />
+
+                    <TextView
+                        android:id="@+id/tv_label_leave_dates"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/leave"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/sp_leave_type" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_leave_dates"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_leave_dates">
+
+                        <EditText
+                            android:id="@+id/et_start_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="4dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:fontFamily="@font/interr"
+                            android:textSize="16sp"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:inputType="date"
+                            android:background="@drawable/edit_text_background" />
+
+                        <EditText
+                            android:id="@+id/et_end_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:fontFamily="@font/interr"
+                            android:hint="@string/dd_mm_yyyy"
+                            android:textSize="16sp"
+                            android:inputType="date"
+                            android:background="@drawable/edit_text_background" />
+                    </LinearLayout>
+
+                    <!-- Purpose Field -->
+                    <TextView
+                        android:id="@+id/tv_label_purpose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/purpose_for_leave"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ll_leave_dates" />
+
+                    <EditText
+                        android:id="@+id/et_purpose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/interr"
+                        android:hint="@string/reason"
+                        android:inputType="textMultiLine"
+                        android:textSize="16sp"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_purpose" />
+
+                    <!-- Attachment Field -->
+                    <TextView
+                        android:id="@+id/tv_label_attachment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/attachment"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/epilogue_semibold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/et_purpose" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_attachment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:padding="8dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/edit_text_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_label_attachment">
+
+                        <EditText
+                            android:id="@+id/et_attachment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="6px"
+                            android:fontFamily="@font/interr"
+                            android:hint="@string/no_file_chosen"
+                            android:background="@color/white"
+                            android:textSize="16sp"
+                            android:focusable="false"
+                            android:clickable="false" />
+
+                        <ImageButton
+                            android:id="@+id/ib_choose_file"
+                            android:layout_width="48dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_folder"
+                            android:contentDescription="@string/choose_file"
+                            android:background="@color/white"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/et_attachment"
+                            app:layout_constraintBottom_toBottomOf="@id/et_attachment"
+                            app:layout_constraintStart_toEndOf="@id/et_attachment" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bt_apply"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/apply_button"
+                        android:backgroundTint="@color/apply_btn"
+                        android:fontFamily="@font/interr"
+                        android:text="@string/apply"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textFontWeight="600"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ll_attachment" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
