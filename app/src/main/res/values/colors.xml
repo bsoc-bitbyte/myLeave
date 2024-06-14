@@ -7,4 +7,6 @@
     <color name="black_custom">#171A1F</color>
     <color name="grey">#9095A0</color>
     <color name="apply_btn">#4DABF5</color>
+    <color name="btn_leaves_color">#152330</color>
+    <color name="leaves_txt">#BCC1CA</color>
 </resources>

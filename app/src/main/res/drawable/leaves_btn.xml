@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black" /> <!-- black for pressed state -->
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/btn_leaves_color" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+</selector>
