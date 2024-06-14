@@ -92,11 +92,10 @@ class LeaveFormActivity : AppCompatActivity() {
             calendar.get(Calendar.MONTH),
             calendar.get(Calendar.DAY_OF_MONTH))
 
-        // Set the minimum date to today for start date picker
+        // Set the minimum date for start/end date picker
         if (check == 0) {
             datePickerDialog.datePicker.minDate = System.currentTimeMillis()
         } else {
-            // Set the minimum date for end date picker to the start date
             datePickerDialog.datePicker.minDate = startDate.time
         }
 
