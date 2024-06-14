@@ -33,6 +33,8 @@
     <string name="choose_file">Choose File</string>
     <string name="agrim_gupta">Agrim Gupta</string>
     <string name="_22bcs016">22BCS016</string>
+    <string name="leaves">Leaves</string>
+    <string name="leave_history">Leave History</string>
     <string-array name="leave_types">
         <item>Select--</item>
         <item>Sick Leave</item>

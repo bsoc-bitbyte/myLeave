@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Leave History"
+            android:text="@string/leave_history"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:fontFamily="@font/epilogue_bold"
@@ -68,7 +68,7 @@
                 android:textSize="16sp"
                 android:drawableStart="@drawable/ic_leaves"
                 android:textColor="@color/leaves_txt"
-                android:text="Leaves"
+                android:text="@string/leaves"
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 app:layout_constraintTop_toTopOf="parent"
