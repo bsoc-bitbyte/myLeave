@@ -69,4 +69,10 @@
         <item>ECE</item>
         <item>Design</item>
     </string-array>
+    <string name="hint_name">Agrim Gupta</string>
+    <string name="SignUp_image">SignUp Image</string>
+    <string name="login_image">Login Image</string>
+    <string name="login_msg">Login to your account</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
 </resources>
