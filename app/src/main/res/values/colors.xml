@@ -9,4 +9,8 @@
     <color name="apply_btn">#4DABF5</color>
     <color name="btn_leaves_color">#152330</color>
     <color name="leaves_txt">#BCC1CA</color>
+    <color name="background">#F3F4F6</color>
+    <color name="green">#12BC43</color>
+    <color name="red">#E82E2E</color>
+    <color name="text_color">#323842</color>
 </resources>
