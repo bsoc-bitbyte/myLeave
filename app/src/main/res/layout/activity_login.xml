@@ -193,44 +193,40 @@
                     app:layout_constraintTop_toBottomOf="@+id/etLoginPassword"
                     app:layout_constraintVertical_bias="0.651" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <LinearLayout
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="16dp"
+                    >
+                    <TextView
+                        android:id="@+id/tvDontHaveAccount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/dont_have_an_account"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginBottom="16dp"
-                        >
+                        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+                        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+                        app:layout_constraintVertical_bias="0.342" />
 
-                        <TextView
-                            android:id="@+id/tvDontHaveAccount"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/dont_have_an_account"
-                            android:textColor="@color/grey"
-                            android:textSize="16sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="@+id/btnLogin"
-                            app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-                            app:layout_constraintVertical_bias="0.342" />
-
-                        <TextView
-                            android:id="@+id/tvSignUp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="12dp"
-                            android:text="@string/sign_up"
-                            android:textColor="@color/btn_color"
-                            android:textIsSelectable="true"
-                            android:textSize="16sp"
-                            app:layout_constraintStart_toEndOf="@+id/tvDontHaveAccount"
-                            app:layout_constraintTop_toTopOf="@+id/tvDontHaveAccount" />
-                    </LinearLayout>
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/tvSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/btn_color"
+                        android:textIsSelectable="true"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/tvDontHaveAccount"
+                        app:layout_constraintTop_toTopOf="@+id/tvDontHaveAccount" />
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
