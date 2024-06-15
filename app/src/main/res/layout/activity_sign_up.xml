@@ -104,10 +104,10 @@
                     android:layout_marginHorizontal="36dp"
                     android:layout_marginTop="12dp"
                     android:background="@drawable/custom_edittext"
-                    android:elevation="4dp"
+                    android:elevation="1dp"
                     android:hint="@string/hint_name"
                     android:fontFamily="@font/inter_regular"
-                    android:padding="4dp"
+                    android:padding="12dp"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -135,11 +135,11 @@
                     android:autofillHints="emailAddress"
                     android:fontFamily="@font/inter_regular"
                     android:background="@drawable/custom_edittext"
-                    android:elevation="4dp"
+                    android:elevation="1dp"
                     android:hint="@string/hint_email"
                     android:textSize="20sp"
                     android:inputType="textEmailAddress"
-                    android:padding="8dp"
+                    android:padding="12dp"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -166,11 +166,11 @@
                     android:autofillHints="password"
                     android:textSize="20sp"
                     android:background="@drawable/custom_edittext"
-                    android:elevation="4dp"
+                    android:elevation="1dp"
                     android:hint="@string/condition_password"
                     android:inputType="textPassword"
                     android:fontFamily="@font/inter_regular"
-                    android:padding="4dp"
+                    android:padding="12dp"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -180,7 +180,7 @@
                     android:id="@+id/btnSignUp"
                     android:layout_width="192dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+
                     android:backgroundTint="@color/btn_color"
                     android:fontFamily="@font/lato_bold"
                     android:text="@string/sign_up"
@@ -192,33 +192,49 @@
                     app:layout_constraintTop_toBottomOf="@+id/etPassword"
                     app:layout_constraintVertical_bias="0.651" />
 
-                <TextView
-                    android:id="@+id/tvAlreadyHaveAccount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:text="@string/already_have_an_account"
-                    android:textColor="@color/grey"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/btnSignUp"
-                    app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
-                    />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/tvLogin"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:text="@string/login"
-                    android:textColor="@color/btn_color"
-                    android:textIsSelectable="true"
-                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/tvAlreadyHaveAccount"
-                    app:layout_constraintTop_toTopOf="@+id/tvAlreadyHaveAccount"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginBottom="16dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvAlreadyHaveAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+                        android:text="@string/already_have_an_account"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSignUp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/login"
+                        android:textColor="@color/btn_color"
+                        android:textIsSelectable="true"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvAlreadyHaveAccount"
+                        app:layout_constraintTop_toTopOf="@+id/tvAlreadyHaveAccount"
+                        app:layout_constraintVertical_bias="0.0" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
