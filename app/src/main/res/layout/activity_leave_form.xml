@@ -183,8 +183,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/tv_label_leave_dates">
 
-                        <EditText
-                            android:id="@+id/et_start_date"
+                        <TextView
+                            android:id="@+id/tv_start_date"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="4dp"
@@ -192,21 +192,19 @@
                             android:padding="8dp"
                             android:fontFamily="@font/interr"
                             android:textSize="16sp"
-                            android:hint="@string/dd_mm_yyyy"
-                            android:inputType="date"
+                            android:text="@string/dd_mm_yyyy"
                             android:background="@drawable/edit_text_background" />
 
-                        <EditText
-                            android:id="@+id/et_end_date"
+                        <TextView
+                            android:id="@+id/tv_end_date"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="4dp"
                             android:layout_weight="1"
                             android:padding="8dp"
                             android:fontFamily="@font/interr"
-                            android:hint="@string/dd_mm_yyyy"
+                            android:text="@string/dd_mm_yyyy"
                             android:textSize="16sp"
-                            android:inputType="date"
                             android:background="@drawable/edit_text_background" />
                     </LinearLayout>
 
