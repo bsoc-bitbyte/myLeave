@@ -35,6 +35,26 @@
     <string name="_22bcs016">22BCS016</string>
     <string name="leaves">Leaves</string>
     <string name="leave_history">Leave History</string>
+    <string name="leave_request">Leave Request</string>
+    <string name="details">Details</string>
+    <string name="name_with_colon">Name :</string>
+    <string name="roll_no_with_colon">Roll No :</string>
+    <string name="department_with_colon">Department :</string>
+    <string name="leave_type_with_colon">Leave Type :</string>
+    <string name="casual">Casual</string>
+    <string name="leave_">Leave</string>
+    <string name="from">From :</string>
+    <string name="_21_05_2024">21/05/2024</string>
+    <string name="_26_05_2024">26/05/2024</string>
+    <string name="to">To :</string>
+    <string name="purpose">Purpose</string>
+    <string name="temp_purpose">I am going to my hometown from 21st May to 26th May due to a family function. So kindly grant me a leave for 5 days.</string>
+    <string name="wedding_function_pdf">Wedding_Function.pdf </string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="back_button">Back Button</string>
+    <string name="download_button">Download Button</string>
+    <string name="view_leave_history">View Leave History</string>
     <string-array name="leave_types">
         <item>Select--</item>
         <item>Sick Leave</item>
