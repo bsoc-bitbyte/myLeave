@@ -4,7 +4,7 @@
     <string name="create_an_account">Create an account</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
-    <string name="hint_email">test@gmail.com</string>
+    <string name="hint_email">Email</string>
     <string name="password">Password</string>
     <string name="condition_password">8+ Characters</string>
     <string name="already_have_an_account">Already have an account?</string>
@@ -32,7 +32,7 @@
     <string name="apply">Apply</string>
     <string name="choose_file">Choose File</string>
     <string name="agrim_gupta">Agrim Gupta</string>
-    <string name="_22bcs016">22BCS016</string>
+    <string name="roll_no_">Roll No.</string>
     <string name="leaves">Leaves</string>
     <string name="leave_history">Leave History</string>
     <string name="leave_request">Leave Request</string>
@@ -64,12 +64,12 @@
     </string-array>
     <string-array name="department_array">
         <item>CSE</item>
-        <item>MECH</item>
+        <item>ME</item>
         <item>SM</item>
         <item>ECE</item>
         <item>Design</item>
     </string-array>
-    <string name="hint_name">Agrim Gupta</string>
+    <string name="hint_name">Name</string>
     <string name="SignUp_image">SignUp Image</string>
     <string name="login_image">Login Image</string>
     <string name="login_msg">Login to your account</string>

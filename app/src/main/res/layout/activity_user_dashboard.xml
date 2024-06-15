@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_background"
+    android:background="@color/off_white"
     tools:context=".ui.user.UserDashboardActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -32,8 +32,8 @@
                 android:fontFamily="@font/epilogue_bold"
                 android:text="@string/dashboard"
                 android:textColor="@color/black_custom"
-                android:layout_marginStart="140dp"
                 android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -57,11 +57,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:text="@string/pending_applications"
-                android:textColor="@color/black_custom"
-                android:layout_marginTop="85dp"
-                android:textSize="20sp"
+                android:textColor="@color/light_black"
+                android:layout_marginTop="48dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_medium"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/tvDashboard">
 
             </TextView>
 
@@ -69,11 +70,10 @@
                 android:id="@+id/rvPendingApplications"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-
                 android:nestedScrollingEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tvPendingApplications"
                 app:layout_constraintTop_toBottomOf="@id/tvPendingApplications">
 
@@ -86,8 +86,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
                 android:text="@string/past_applications"
-                android:textColor="@color/black_custom"
-                android:textSize="20sp"
+                android:textColor="@color/light_black"
+                android:textSize="18sp"
+                android:fontFamily="@font/inter_medium"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/rvPendingApplications">
 
@@ -97,10 +98,10 @@
                 android:id="@+id/rvPastApplications"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
                 android:nestedScrollingEnabled="false"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/tvPastApplications"
                 app:layout_constraintTop_toBottomOf="@id/tvPastApplications">
 

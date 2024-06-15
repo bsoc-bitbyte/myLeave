@@ -6,45 +6,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:padding="16dp"
     tools:context=".ui.admin.LeaveEntryActivity">
-
-    <TextView
-        android:id="@+id/tvLeaveRequest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/epilogue_bold"
-        android:text="@string/leave_request"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/ibBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/background"
-        android:contentDescription="@string/back_button"
-        android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteY="26dp" />
 
     <ScrollView
         android:id="@+id/ScrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@color/background"
-        app:layout_constraintTop_toBottomOf="@+id/tvLeaveRequest">
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvLeaveRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/epilogue_bold"
+            android:text="@string/leave_request"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@color/background"
+                android:contentDescription="@string/back_button"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvLeaveRequest"
+                app:layout_constraintBottom_toBottomOf="@id/tvLeaveRequest"/>
+
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             app:cardCornerRadius="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvLeaveRequest"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
@@ -71,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:fontFamily="@font/inter_semibold"
+                    android:fontFamily="@font/inter_medium"
                     android:text="@string/name_with_colon"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -82,7 +90,7 @@
                     android:id="@+id/tvRollNo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_semibold"
+                    android:fontFamily="@font/inter_medium"
                     android:text="@string/roll_no_with_colon"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -93,7 +101,7 @@
                     android:id="@+id/tvDepartment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_semibold"
+                    android:fontFamily="@font/inter_medium"
                     android:text="@string/department_with_colon"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -104,7 +112,7 @@
                     android:id="@+id/tvLeaveType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter_semibold"
+                    android:fontFamily="@font/inter_medium"
                     android:text="@string/leave_type_with_colon"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -119,6 +127,7 @@
                     android:text="@string/agrim_gupta"
                     android:textColor="@color/text_color"
                     android:textSize="16sp"
+                    android:fontFamily="@font/inter_regular"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@id/glReference"
                     app:layout_constraintTop_toTopOf="@+id/tvName" />
@@ -128,9 +137,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="@string/_22bcs016"
+                    android:text="22BCS016"
                     android:textColor="@color/text_color"
                     android:textSize="16sp"
+                    android:fontFamily="@font/inter_regular"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@id/glReference"
                     app:layout_constraintTop_toBottomOf="@id/tvTempName" />
@@ -143,6 +153,7 @@
                     android:text="@string/cse"
                     android:textColor="@color/text_color"
                     android:textSize="16sp"
+                    android:fontFamily="@font/inter_regular"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@id/glReference"
                     app:layout_constraintTop_toBottomOf="@id/tvTempRollNo" />
@@ -155,6 +166,7 @@
                     android:text="@string/casual"
                     android:textColor="@color/text_color"
                     android:textSize="16sp"
+                    android:fontFamily="@font/inter_regular"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@id/glReference"
                     app:layout_constraintTop_toBottomOf="@id/tvTempDepartment" />
@@ -164,13 +176,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_begin="116dp" />
+                    app:layout_constraintGuide_percent="0.35" />
 
                 <TextView
                     android:id="@+id/tvLeave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="24dp"
                     android:fontFamily="@font/inter_semibold"
                     android:text="@string/leave_"
                     android:textColor="@color/black"
@@ -192,7 +204,7 @@
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/inter_semibold"
+                        android:fontFamily="@font/inter_medium"
                         android:text="@string/from"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
@@ -204,7 +216,9 @@
                         android:layout_marginStart="12dp"
                         android:text="@string/_21_05_2024"
                         android:textColor="@color/text_color"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:fontFamily="@font/inter_regular"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -220,7 +234,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="12dp"
-                        android:fontFamily="@font/inter_semibold"
+                        android:fontFamily="@font/inter_medium"
                         android:text="@string/to"
                         android:textColor="@color/black"
                         android:textSize="16sp"
@@ -233,7 +247,9 @@
                         android:layout_height="wrap_content"
                         android:text="@string/_26_05_2024"
                         android:textColor="@color/text_color"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:fontFamily="@font/inter_regular"
+                        />
                 </LinearLayout>
 
 
@@ -241,7 +257,7 @@
                     android:id="@+id/tvPurpose"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="24dp"
                     android:fontFamily="@font/inter_semibold"
                     android:text="@string/purpose"
                     android:textColor="@color/black"
@@ -254,18 +270,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:letterSpacing="0.05"
                     android:lineSpacingExtra="3dp"
                     android:text="@string/temp_purpose"
                     android:textColor="@color/text_color"
                     android:textSize="16sp"
+                    android:fontFamily="@font/inter_regular"
                     app:layout_constraintTop_toBottomOf="@id/tvPurpose" />
 
                 <TextView
                     android:id="@+id/tvAttachment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="24dp"
                     android:fontFamily="@font/inter_semibold"
                     android:text="@string/attachment"
                     android:textColor="@color/black"
@@ -281,6 +297,7 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:text="@string/wedding_function_pdf"
+                    android:fontFamily="@font/inter_regular"
                     android:textColor="@color/text_color"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -314,7 +331,7 @@
                     android:fontFamily="@font/inter_semibold"
                     android:text="@string/view_leave_history"
                     android:textColor="@color/btn_add_color"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvPDFName" />
 
@@ -331,7 +348,7 @@
                     android:paddingVertical="10dp"
                     android:text="@string/approve"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toStartOf="@+id/tvReferenceCenter"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tvViewLeaveHistory" />
@@ -356,7 +373,7 @@
                     android:paddingVertical="10dp"
                     android:text="@string/reject"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/tvReferenceCenter"
                     app:layout_constraintTop_toTopOf="@id/tvApprove" />
@@ -365,6 +382,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 

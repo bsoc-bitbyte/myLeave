@@ -13,16 +13,22 @@
         android:theme="@style/Theme.MyLeave"
         tools:targetApi="31">
         <activity
-            android:name=".ui.admin.LeaveHistoryActivity"
+            android:name=".ui.admin.LeaveEntryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.admin.LeaveHistoryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.user.LeaveFormActivity"
             android:exported="false" />
         <activity
             android:name=".ui.user.UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.SignUpActivity"
