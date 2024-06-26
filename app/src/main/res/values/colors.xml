@@ -18,4 +18,6 @@
     <color name="red">#E82E2E</color>
     <color name="text_color">#323842</color>
     <color name="sign_up_image">#6AA2BE</color>
+    <color name="black_dialog_box">#171A1F</color>
+    <color name="grey2">#E5EBFF</color>
 </resources>
