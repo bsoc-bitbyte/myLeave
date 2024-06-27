@@ -75,4 +75,14 @@
     <string name="login_msg">Login to your account</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="dont_have_an_account">Don\'t have an account?</string>
+
+    <string name="approve_leave">Approve Leave?</string>
+    <string name="approve_msg">Are you sure you want to approve the leave request?</string>
+    <string name="Reject_leave">Reject Leave?</string>
+    <string name="reject_msg">Are you sure you want to reject the leave request?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+
 </resources>
