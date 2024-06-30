@@ -1,9 +1,7 @@
 package com.example.myleave.models
 
-data class User (
+data class UserBody (
     val name: String= "",
     val email: String= "",
-    val uid: String = "",
-    val isAdmin: Boolean = false
+    val password: String = "",
 )
-
