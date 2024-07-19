@@ -19,7 +19,7 @@ object FirebaseModule {
     @Singleton
     fun provideRetrofitInstance(): myLeaveAPI =
         Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:3000")
+            .baseUrl("https://myleave-server.onrender.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(myLeaveAPI::class.java)

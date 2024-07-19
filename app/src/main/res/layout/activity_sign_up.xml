@@ -45,8 +45,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:background="@color/off_white"
+                android:orientation="vertical"
 
                 android:padding="8dp">
 
@@ -112,12 +112,12 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/custom_edittext"
                         android:elevation="1dp"
-                        android:inputType="text"
                         android:fontFamily="@font/inter_regular"
                         android:hint="@string/hint_name"
-                        android:textColorHint="@color/leaves_txt"
+                        android:inputType="text"
                         android:padding="12dp"
                         android:textColor="@color/black"
+                        android:textColorHint="@color/leaves_txt"
                         android:textSize="16sp" />
 
                     <TextView
@@ -140,10 +140,10 @@
                         android:elevation="1dp"
                         android:fontFamily="@font/inter_regular"
                         android:hint="@string/hint_email"
-                        android:textColorHint="@color/leaves_txt"
                         android:inputType="textEmailAddress"
                         android:padding="12dp"
                         android:textColor="@color/black"
+                        android:textColorHint="@color/leaves_txt"
                         android:textSize="16sp" />
 
                     <TextView
@@ -166,28 +166,27 @@
                         android:elevation="1dp"
                         android:fontFamily="@font/inter_regular"
                         android:hint="@string/condition_password"
-                        android:textColorHint="@color/leaves_txt"
                         android:inputType="textPassword"
                         android:padding="12dp"
                         android:textColor="@color/black"
-                        android:textSize="16sp"/>
+                        android:textColorHint="@color/leaves_txt"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/btnSignUp"
                     android:layout_width="0dp"
-                    app:layout_constraintWidth_percent="0.6"
-                    android:paddingVertical="8dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/btn_color"
                     android:fontFamily="@font/lato_bold"
+                    android:paddingVertical="8dp"
                     android:text="@string/sign_up"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toTopOf="@id/llSignUpLink"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                     />
+                    app:layout_constraintWidth_percent="0.6" />
 
                 <LinearLayout
                     android:id="@+id/llSignUpLink"
@@ -203,10 +202,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
+                        android:fontFamily="@font/epilogue_medium"
                         android:text="@string/already_have_an_account"
                         android:textColor="@color/grey"
                         android:textSize="14sp"
-                        android:fontFamily="@font/epilogue_medium"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/btnSignUp"
                         app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
@@ -227,6 +226,20 @@
                         app:layout_constraintTop_toTopOf="@+id/tvAlreadyHaveAccount"
                         app:layout_constraintVertical_bias="0.0" />
                 </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginBottom="4dp"
+                    android:indeterminateDrawable="@drawable/progress_bar"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="@id/btnSignUp"
+                    app:layout_constraintVertical_bias="0.7"
+                    app:layout_constraintBottom_toBottomOf="@id/btnSignUp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
