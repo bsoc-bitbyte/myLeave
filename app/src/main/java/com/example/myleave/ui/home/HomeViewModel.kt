@@ -67,6 +67,9 @@ class HomeViewModel
     fun login(userBody: UserBody) {
         viewModelScope.launch {
             try {
+                // When user called login function setting resource as loading
+                login.value = Resource.loading(null)
+
                 val response = homeRepository.login(userBody)
                 when (response.code()) {
                     201 -> {
